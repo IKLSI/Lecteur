@@ -1,0 +1,18 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 5%;
+    margin-left: 13%;
+}
+
+.video-grid img {
+    height: auto;
+    max-width: 100%;
+}
+
+.file {
+    width: 280px;
+    height: 280px;
+    -webkit-box-shadow: 0 0 0 8px #000,0 0 0 16px #4B4C4B,0 0 0 24px #828482,0 0 0 31px #B2B5B2,0 0 0 39px #DADDDA,5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0 0 0 8px #000,0 0 0 16px #4B4C4B,0 0 0 24px #828482,0 0 0 31px #B2B5B2,0 0 0 39px #DADDDA,5px 5px 15px 5px rgba(0,0,0,0);
+}

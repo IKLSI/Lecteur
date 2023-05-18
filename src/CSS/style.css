@@ -1,0 +1,82 @@
+body {
+		background-image: url("https://s2.best-wallpaper.net/wallpaper/5120x2880/1908/Squares-geometry-colorful-light-abstract-picture_5120x2880.jpg"); 
+		background-size: cover;
+}
+
+header {
+		padding: 20px;
+		text-align: center;
+		color: #fff;
+		background-color: #333;
+}
+
+#lecteur {
+		margin-left: 33%;
+}
+
+input[type="text"] {
+		width: 32%;
+		margin-top: 5%;
+		margin-bottom: 10px;
+		margin-left: 33%;
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		text-align: center;
+		font-size: 16px;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2);
+		resize: none;
+}
+
+button {
+		position: relative;
+		width: 195px;
+		height: 40px;
+		margin-top: 8%;
+		margin-left: 45%;
+		border: none;
+		font-family: 'Times New Roman',Times,serif;
+		font-size: 1.1rem;
+		font-weight: bold;
+		outline: none;
+		color: white;
+		background: #e76f6f;
+		box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+		transition: all .5s;
+		cursor: pointer;
+}
+
+button::before {
+		content: '';
+		position: absolute;
+		top: 5px;
+		left: -10px;
+		width: 10px;
+		height: 100%;
+		background: #795a5a;
+		transform: skewY(-45deg);
+}
+
+button::after {
+		content: '';
+		position: absolute;
+		top: 40px;
+		left: -5px;
+		width: 195px;
+		height: 10px;
+		background: #795a5a;
+		transform: skewX(-45deg);
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: bold;
+	transition: all .5s;
+}
+
+button:hover {
+		box-shadow: -10px 30px 10px rgba(0, 0, 0, 0.5);
+		transform: rotate(-10deg) skewX(25deg) translate(20px, -20px);
+}

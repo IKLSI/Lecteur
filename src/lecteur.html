@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lecteur de vidéos YouTube</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./CSS/audio.css"/>
+</head>
+<body>
+	<header>
+		<h1>
+			Bienvenue <span id="username"></span> sur un lecteur d'audio mp3
+		</h1>
+        <a href="index.html">Lecteur Youtube</a>
+	</header>
+	<audio id="audio" controls></audio>
+	<div id="__drop" class="hidden"></div>
+	<div id="waveforms">
+		<canvas id="view1" class="canvas" width="820"></canvas>
+		<canvas id="view3" class="canvas" width="820"></canvas>
+		<canvas id="view2" class="canvas" width="820"></canvas>
+	</div><br>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./JS/lecteur.js"></script>
+	<script>
+		var username = prompt("Entrez votre nom d'utilisateur :");
+		var reponse = document.getElementById('username');
+		reponse.textContent = username;
+	</script>
+</body>
+</html>

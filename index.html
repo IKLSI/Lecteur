@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lecteur de vidéos YouTube</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="./src/CSS/style.css"/>
+	<link rel="stylesheet" type="text/css" href="./src/CSS/lecteurVideo.css"/>
+</head>
+<body>
+	<header>
+		<h1>
+			Bienvenue <span id="username"></span> sur un lecteur de vidéo YouTube
+		</h1>
+		<a href="lecteur.html">Lecteur audio</a>
+	</header>
+	<input type="text" id="video-input" placeholder="Entrez le titre d'une vidéo"/><br />
+	<div id="lecteur"></div>
+	<button onclick="lecture()">Lancer la vidéo</button><br />
+	<div id="related-videos" class="video-grid"></div><br />
+	<script>
+		var username = prompt("Entrez votre nom d'utilisateur :");
+		var reponse = document.getElementById('username');
+		reponse.textContent = username;
+	</script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script src="./src/JS/requete_ytb.js"></script>
+</body>
+</html>
